@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Chocolate artesanal amazônico</title>
+  <desc id="desc">Barra artesanal de chocolate escuro com pedaços de cacau e folhas.</desc>
+  <rect width="500" height="320" rx="28" fill="#f4e9df"/>
+  <ellipse cx="252" cy="258" rx="155" ry="22" fill="#dfc9b7"/>
+  <g transform="rotate(-8 250 165)">
+    <rect x="111" y="88" width="278" height="151" rx="18" fill="#613721" stroke="#432519" stroke-width="9"/>
+    <path d="M203 92v142m92-142v142M116 163h268" stroke="#986344" stroke-width="6"/>
+    <g fill="#78472b" stroke="#432519" stroke-width="4">
+      <rect x="126" y="103" width="65" height="48" rx="8"/><rect x="216" y="103" width="64" height="48" rx="8"/>
+      <rect x="307" y="103" width="65" height="48" rx="8"/><rect x="126" y="177" width="65" height="48" rx="8"/>
+      <rect x="216" y="177" width="64" height="48" rx="8"/><rect x="307" y="177" width="65" height="48" rx="8"/>
+    </g>
+  </g>
+  <path d="M97 211c-17-35 2-61 39-58 4 36-10 56-39 58zm309-65c17-35-2-61-39-58-4 36 10 56 39 58z" fill="#66814b" stroke="#48653b" stroke-width="5"/>
+</svg>

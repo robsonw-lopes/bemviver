@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Cesto artesanal de fibra</title>
+  <desc id="desc">Cesto de fibras naturais trançadas em tons de palha e marrom.</desc>
+  <rect width="500" height="320" rx="28" fill="#f7edda"/>
+  <ellipse cx="250" cy="266" rx="135" ry="20" fill="#d9c5a4"/>
+  <path d="M178 112c0-44 32-73 72-73s72 29 72 73" fill="none" stroke="#8d5c35" stroke-width="13"/>
+  <path d="M130 118h240l-25 130c-4 21-21 35-42 35h-106c-21 0-38-14-42-35z" fill="#c99456" stroke="#754a2c" stroke-width="8"/>
+  <path d="M138 148h224M132 180h236M126 212h248M139 243h222" stroke="#f2d39c" stroke-width="10"/>
+  <path d="M164 120l16 158m42-158 10 163m40-163-8 163m52-163-18 158" stroke="#9b6337" stroke-width="8"/>
+  <path d="M130 119c30 20 62 20 92 0s62-20 92 0 37 18 56 0" fill="none" stroke="#e8c17f" stroke-width="9"/>
+</svg>

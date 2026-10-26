@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração de turismo em comunidade ribeirinha</title>
+  <desc id="desc">Casas de madeira e uma pequena oficina comunitária junto a um rio amazônico, cercadas por vegetação.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff3ed"/>
+      <stop offset="1" stop-color="#f5f2d9"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#68b9b2"/>
+      <stop offset="1" stop-color="#277e83"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#sky)"/>
+  <circle cx="514" cy="76" r="34" fill="#f7c96b"/>
+  <path d="M0 195 Q100 150 205 192 T420 184 T640 190 V276 H0Z" fill="#5c9a69"/>
+  <path d="M0 220 Q95 185 185 218 T380 207 T640 220 V286 H0Z" fill="#347a54"/>
+  <path d="M0 252 Q150 223 280 249 T640 244 V420 H0Z" fill="url(#river)"/>
+  <path d="M0 302 Q130 280 250 303 T500 297 T640 305" fill="none" stroke="#b9e2d5" stroke-width="5" opacity=".8"/>
+  <path d="M0 354 Q120 333 255 356 T510 350 T640 358" fill="none" stroke="#b9e2d5" stroke-width="4" opacity=".65"/>
+  <g fill="#286344">
+    <path d="M38 216 62 91l25 125z"/><path d="M27 157q35-54 69 0-34-16-69 0z"/>
+    <path d="M111 211 133 111l22 100z"/><path d="M101 165q32-47 64 0-32-14-64 0z"/>
+    <path d="M560 215 584 88l25 127z"/><path d="M548 157q36-54 72 0-36-16-72 0z"/>
+  </g>
+  <g stroke="#6c4933" stroke-width="7" stroke-linecap="round">
+    <path d="M174 238v39M287 235v42M407 237v43"/>
+  </g>
+  <g>
+    <path d="M146 186h139v62H146z" fill="#dca86d"/>
+    <path d="m136 190 80-57 80 57z" fill="#8c5638"/>
+    <path d="M164 204h30v44h-30zM235 205h35v26h-35z" fill="#6e4936"/>
+    <path d="M326 195h118v57H326z" fill="#e7bd7c"/>
+    <path d="m315 198 70-48 70 48z" fill="#9b5f3a"/>
+    <path d="M342 211h27v41h-27zM394 210h35v24h-35z" fill="#6e4936"/>
+    <path d="M346 224h20M399 222h26" stroke="#f6e7c7" stroke-width="3"/>
+  </g>
+  <path d="M241 327q67-24 136 0l-18 21H259z" fill="#593f2f"/>
+  <path d="M270 324v-36l24 18 24-18v36" fill="#e6bd7a" stroke="#593f2f" stroke-width="4"/>
+  <circle cx="286" cy="302" r="4" fill="#523d2c"/>
+  <circle cx="303" cy="302" r="4" fill="#523d2c"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração de jambu amazônico</title>
+  <desc id="desc">Ramo de jambu com folhas verdes serrilhadas e pequenas flores amarelas.</desc>
+  <rect width="500" height="320" rx="28" fill="#edf5df"/>
+  <path d="M250 282c-4-64 5-130 0-207" fill="none" stroke="#537849" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#4f8b4c" stroke="#35693d" stroke-width="4">
+    <path d="M246 222c-70 10-108-18-112-73 53-7 96 18 112 73z"/>
+    <path d="M253 189c65 3 104-31 100-83-52-2-91 29-100 83z"/>
+    <path d="M247 143c-56 4-88-27-84-70 45-2 77 25 84 70z"/>
+    <path d="M253 112c49-1 76-30 70-68-39-1-67 25-70 68z"/>
+  </g>
+  <g fill="#f4c64e" stroke="#d79c2b" stroke-width="3">
+    <circle cx="140" cy="136" r="14"/><circle cx="350" cy="106" r="14"/><circle cx="164" cy="73" r="12"/>
+  </g>
+  <path d="M178 291h144" stroke="#9a7347" stroke-width="10" stroke-linecap="round"/>
+</svg>

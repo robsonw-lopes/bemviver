@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tigela de açaí</title>
+  <desc id="desc">Tigela com creme roxo de açaí, banana e granola.</desc>
+  <rect width="500" height="320" rx="28" fill="#f1e8f6"/>
+  <ellipse cx="250" cy="249" rx="157" ry="25" fill="#d9c6df"/>
+  <path d="M113 150h274l-30 89c-9 27-33 44-62 44h-90c-29 0-53-17-62-44z" fill="#e4d1bd" stroke="#9d7d66" stroke-width="8"/>
+  <path d="M124 150c16-69 63-103 126-103s110 34 126 103z" fill="#54236f"/>
+  <path d="M145 143c20-48 57-73 105-73s85 25 105 73z" fill="#6c328b"/>
+  <g fill="#f2d782">
+    <ellipse cx="190" cy="110" rx="23" ry="11" transform="rotate(25 190 110)"/>
+    <ellipse cx="235" cy="92" rx="23" ry="11" transform="rotate(-12 235 92)"/>
+    <ellipse cx="281" cy="105" rx="23" ry="11" transform="rotate(18 281 105)"/>
+  </g>
+  <g fill="#d8b879">
+    <circle cx="316" cy="125" r="7"/><circle cx="332" cy="111" r="6"/><circle cx="303" cy="91" r="6"/>
+    <circle cx="163" cy="128" r="6"/><circle cx="215" cy="126" r="6"/>
+  </g>
+</svg>

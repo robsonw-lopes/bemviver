@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Colar artesanal de sementes</title>
+  <desc id="desc">Colar feito com sementes naturais em tons de castanho, terracota e creme.</desc>
+  <rect width="500" height="320" rx="28" fill="#f2efe1"/>
+  <path d="M132 75c12 106 68 171 118 171s106-65 118-171" fill="none" stroke="#6f5038" stroke-width="8" stroke-linecap="round"/>
+  <g stroke="#fff5dc" stroke-width="3">
+    <ellipse cx="139" cy="105" rx="12" ry="17" transform="rotate(-10 139 105)" fill="#a66b3f"/>
+    <ellipse cx="155" cy="145" rx="12" ry="17" transform="rotate(-22 155 145)" fill="#c27b43"/>
+    <ellipse cx="179" cy="181" rx="12" ry="17" transform="rotate(-38 179 181)" fill="#805337"/>
+    <ellipse cx="211" cy="208" rx="12" ry="17" transform="rotate(-53 211 208)" fill="#c27b43"/>
+    <ellipse cx="250" cy="226" rx="14" ry="19" fill="#a66b3f"/>
+    <ellipse cx="289" cy="208" rx="12" ry="17" transform="rotate(53 289 208)" fill="#c27b43"/>
+    <ellipse cx="321" cy="181" rx="12" ry="17" transform="rotate(38 321 181)" fill="#805337"/>
+    <ellipse cx="345" cy="145" rx="12" ry="17" transform="rotate(22 345 145)" fill="#c27b43"/>
+    <ellipse cx="361" cy="105" rx="12" ry="17" transform="rotate(10 361 105)" fill="#a66b3f"/>
+  </g>
+  <path d="M250 247v26" stroke="#6f5038" stroke-width="5"/>
+  <path d="M250 267c-17 12-16 29 0 36 16-7 17-24 0-36z" fill="#547a50" stroke="#38533a" stroke-width="4"/>
+</svg>

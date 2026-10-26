@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Peixe frito amazônico</title>
+  <desc id="desc">Peixe inteiro frito servido com limão e folhas em prato claro.</desc>
+  <rect width="500" height="320" rx="28" fill="#edf0df"/>
+  <ellipse cx="250" cy="245" rx="172" ry="30" fill="#d2d5bd"/>
+  <ellipse cx="250" cy="190" rx="176" ry="89" fill="#fffdf5" stroke="#c5c5ad" stroke-width="9"/>
+  <path d="M136 191q40-63 133-44 43 9 74 44-31 35-74 44-93 19-133-44z" fill="#d99845" stroke="#985b2c" stroke-width="6"/>
+  <path d="m137 191-41-34v68z" fill="#bd7837" stroke="#985b2c" stroke-width="6"/>
+  <circle cx="315" cy="183" r="5" fill="#32291e"/>
+  <path d="M197 156q40 35 0 70m42-75q40 35 0 70m42-68q38 33 0 67" fill="none" stroke="#f4cf86" stroke-width="6"/>
+  <g fill="#62804b" stroke="#47653b" stroke-width="4">
+    <path d="M341 155q24-27 48-12-13 27-43 28z"/><path d="M344 218q25-28 50-15-14 28-45 30z"/>
+  </g>
+  <circle cx="152" cy="222" r="25" fill="#94b75a" stroke="#648144" stroke-width="5"/>
+  <path d="M152 198v48m-23-24h46m-39-17 32 34m0-34-32 34" stroke="#e9f0c9" stroke-width="3"/>
+</svg>

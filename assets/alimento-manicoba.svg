@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Prato de maniçoba</title>
+  <desc id="desc">Porção de maniçoba cozida servida com arroz em prato de cerâmica.</desc>
+  <rect width="500" height="320" rx="28" fill="#f3eddf"/>
+  <ellipse cx="250" cy="246" rx="168" ry="34" fill="#d9cbb1"/>
+  <ellipse cx="250" cy="195" rx="171" ry="92" fill="#fffaf0" stroke="#c9b797" stroke-width="9"/>
+  <ellipse cx="250" cy="190" rx="132" ry="62" fill="#526638"/>
+  <path d="M132 183q42-37 84-1t84 0 67 0v40q-42 32-84 0t-84 0-67 0z" fill="#687a3c"/>
+  <g fill="#a65d3a">
+    <ellipse cx="205" cy="170" rx="23" ry="13" transform="rotate(18 205 170)"/>
+    <ellipse cx="277" cy="206" rx="26" ry="14" transform="rotate(-14 277 206)"/>
+    <ellipse cx="311" cy="167" rx="20" ry="12" transform="rotate(21 311 167)"/>
+  </g>
+  <g fill="#f4e2b4">
+    <ellipse cx="356" cy="156" rx="23" ry="13"/><ellipse cx="372" cy="177" rx="23" ry="13"/><ellipse cx="347" cy="196" rx="23" ry="13"/>
+  </g>
+</svg>

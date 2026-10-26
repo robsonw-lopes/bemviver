@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração de alfavaca</title>
+  <desc id="desc">Planta de alfavaca em vaso, com folhas verdes aromáticas.</desc>
+  <rect width="500" height="320" rx="28" fill="#eaf3df"/>
+  <path d="M250 232c-4-68 0-130 0-174M250 184l-78-57m78 36 76-63m-76 99-84-10m84-19 79 17" fill="none" stroke="#577b45" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#65a653" stroke="#3d743f" stroke-width="4">
+    <ellipse cx="172" cy="124" rx="43" ry="22" transform="rotate(28 172 124)"/>
+    <ellipse cx="324" cy="98" rx="43" ry="22" transform="rotate(-38 324 98)"/>
+    <ellipse cx="166" cy="179" rx="42" ry="21" transform="rotate(4 166 179)"/>
+    <ellipse cx="330" cy="185" rx="42" ry="21" transform="rotate(14 330 185)"/>
+    <ellipse cx="250" cy="75" rx="40" ry="21"/>
+  </g>
+  <g fill="none" stroke="#b7d78a" stroke-width="3">
+    <path d="m138 111 35 17m117-43-31 28m-129 58 41 5m145 13-40-7m-26-110 5 36"/>
+  </g>
+  <path d="M194 218h112l-14 71h-84z" fill="#bf754b" stroke="#885137" stroke-width="6"/>
+  <path d="M187 218h126" stroke="#8b5739" stroke-width="12" stroke-linecap="round"/>
+</svg>

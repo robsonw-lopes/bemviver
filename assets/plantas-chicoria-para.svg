@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração de chicória-do-Pará</title>
+  <desc id="desc">Folhas verdes alongadas de chicória-do-Pará em um pequeno canteiro.</desc>
+  <rect width="500" height="320" rx="28" fill="#edf4df"/>
+  <path d="M250 265V112m0 115-78-89m78 113 83-100m-83 54-102-25m102-5 105-30" fill="none" stroke="#557946" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#4f8f4c" stroke="#386e40" stroke-width="4">
+    <path d="M246 192c-54 10-94-5-114-45 51-20 91-4 114 45z"/>
+    <path d="M255 181c47 7 91-12 112-53-48-17-91 3-112 53z"/>
+    <path d="M245 222c-53 2-91-18-108-58 50-13 89 5 108 58z"/>
+    <path d="M255 229c49-1 88-24 103-66-49-10-88 11-103 66z"/>
+    <path d="M247 145c-35-14-55-42-51-77 38 5 58 33 51 77z"/>
+    <path d="M255 139c37-13 57-40 54-75-39 4-60 31-54 75z"/>
+  </g>
+  <path d="M150 276h200" stroke="#9a7347" stroke-width="12" stroke-linecap="round"/>
+  <path d="M177 276q14 16 28 0m33 0q14 16 28 0m32 0q14 16 28 0" fill="none" stroke="#6d914e" stroke-width="7"/>
+</svg>

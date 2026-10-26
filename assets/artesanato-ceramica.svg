@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Cerâmica artesanal decorativa</title>
+  <desc id="desc">Vaso de cerâmica terracota com grafismos geométricos decorativos.</desc>
+  <rect width="500" height="320" rx="28" fill="#f5eadf"/>
+  <ellipse cx="250" cy="278" rx="100" ry="16" fill="#ddc8b4"/>
+  <path d="M218 66h64l-8 38c34 23 50 54 45 96l-10 62c-3 16-17 27-33 27h-52c-16 0-30-11-33-27l-10-62c-5-42 11-73 45-96z" fill="#b65f3e" stroke="#713b2d" stroke-width="8"/>
+  <path d="M218 68h64v22h-64z" fill="#d48a61" stroke="#713b2d" stroke-width="8"/>
+  <path d="M194 157h112M198 221h104" stroke="#f0cf9d" stroke-width="8"/>
+  <g fill="#f0cf9d">
+    <path d="m208 178 14 14-14 14-14-14zM250 178l14 14-14 14-14-14zM292 178l14 14-14 14-14-14z"/>
+    <path d="m229 231 12 12-12 12-12-12zM271 231l12 12-12 12-12-12z"/>
+  </g>
+  <path d="M229 110h42" stroke="#713b2d" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-labelledby="title desc">
+  <title id="title">Bolsa artesanal de fibra trançada</title>
+  <desc id="desc">Bolsa de mão de fibra natural com alças e trama em tons de palha.</desc>
+  <rect width="500" height="320" rx="28" fill="#f6eddb"/>
+  <ellipse cx="250" cy="276" rx="110" ry="16" fill="#ddc8a5"/>
+  <path d="M190 124V94c0-35 25-58 60-58s60 23 60 58v30" fill="none" stroke="#805634" stroke-width="13"/>
+  <path d="M151 119h198l-14 131c-2 17-16 29-33 29h-104c-17 0-31-12-33-29z" fill="#d5a565" stroke="#805634" stroke-width="8"/>
+  <path d="M150 150h196M147 182h202M144 214h208M155 246h186" stroke="#f3d9a8" stroke-width="9"/>
+  <path d="M178 121l11 157m36-159 5 160m41-160-5 160m42-160-11 159" stroke="#9a683d" stroke-width="7"/>
+  <path d="M158 132c28 18 56 18 84 0s56-18 84 0 28 18 42 0" fill="none" stroke="#855936" stroke-width="7"/>
+  <path d="M194 119c0-17 12-29 28-29h56c16 0 28 12 28 29" fill="none" stroke="#60432f" stroke-width="7"/>
+</svg>
