@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Retrato ilustrado de Rita">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#9fc28d"/><stop offset="1" stop-color="#345d43"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#c28b68"/><stop offset="1" stop-color="#9d684c"/></linearGradient>
+    <clipPath id="frame"><circle cx="60" cy="60" r="60"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="120" height="120" fill="url(#bg)"/>
+    <path d="M0 32Q16 9 31 31T58 23V0H0zm120 38Q104 43 87 56T64 32V0h56z" fill="#5d854f"/>
+    <path d="M0 86q18-21 38 0t40-1q21-22 42 1v34H0z" fill="#31543d"/>
+    <path d="M18 124q3-31 29-38h27q25 7 28 38" fill="#d9e4d0"/>
+    <path d="M44 87l16 15 16-15 10 37H34z" fill="#b67e52"/>
+    <path d="M31 46q2-29 29-29 28 0 29 29l-4 25q-4 21-25 23-21-2-25-23z" fill="#211a18"/>
+    <path d="M40 48q0-21 20-21 20 0 20 22v13q-2 22-20 25-18-3-20-25z" fill="url(#skin)"/>
+    <path d="M36 48q2-28 25-27 18 0 24 18-13-9-22-8-11 1-24 13l1 16z" fill="#211a18"/>
+    <path d="M47 61h6m14 0h6" stroke="#39271f" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M53 75q7 5 14 0" fill="none" stroke="#754832" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="39" cy="69" r="2.5" fill="#c28b68"/><circle cx="81" cy="69" r="2.5" fill="#c28b68"/>
+    <path d="M3 76q12-19 21-7-11 2-17 16m110-20q-13-17-22-5 11 1 17 14" fill="#b4ca84"/>
+  </g>
+</svg>

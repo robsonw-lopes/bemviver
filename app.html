@@ -43,41 +43,8 @@
       </div>
     </div>
 
-    <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
-    <nav id="bottomBar" class="w-full bg-white border-b border-slate-100 px-3 py-2 flex items-center justify-around z-40">
-      <!-- 1. Home (Ativo Verde) -->
-      <button onclick="navigateTo('screen-home')" class="bnav-btn p-2 text-[#0E7A4A] transition" data-nav="screen-home">
-        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      </button>
-
-      <!-- 2. Maleta / Negócio 
-      <button onclick="navigateTo('screen-business')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-business">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
-      </button>-->
-
-      <!-- 3. Coração / Saúde
-      <button onclick="navigateTo('screen-health')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-health">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-      </button>-->
-
-      <!-- 4. Grupo Pessoas / Comunidade
-      <button onclick="navigateTo('screen-community')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-community">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      </button>-->
-
-      <!-- 5. Perfil Usuário 
-      <button onclick="openBusinessProfileModal()" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-      </button>-->
-
-      <!-- 6. Sair -->
-      <button onclick="sair()" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" aria-label="Sair do aplicativo">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M10 17l5-5-5-5M15 12H3m11 9h7a2 2 0 002-2V5a2 2 0 00-2-2h-7"/></svg>
-      </button>
-    </nav>
-
     <!-- ÁREA DE ROLAGEM COM TODAS AS TELAS -->
-    <div id="appScrollArea" class="flex-1 overflow-y-auto bg-white relative">
+    <div id="appScrollArea" class="flex-1 overflow-y-auto bg-white relative pb-16">
 
       <!-- ================= 1. TELA: PROTEÇÃO DE DADOS E SABERES TRADICIONAIS (IMAGEM 1) ================= -->
       <section id="screen-terms" class="screen-view p-4 sm:p-5 space-y-3">
@@ -238,7 +205,7 @@
             </p>
           </div>
 
-          <!-- Card 2: Rosa Claro - Saúde e Bem-Viver -->
+          <!-- Card 2: Rosa Claro - Saúde Mental e Bem-Viver -->
           <div onclick="navigateTo('screen-health')" class="card-palette-pink p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
             <div class="w-12 h-12 flex items-center justify-center">
               <svg class="w-9 h-9 text-[#E52D5A]" viewBox="0 0 24 24" fill="currentColor">
@@ -246,11 +213,23 @@
               </svg>
             </div>
             <p class="font-extrabold text-[#C2185B] text-xs leading-tight">
-              Saúde e<br>Bem-Viver
+              Saúde Mental<br>e Bem-Viver
             </p>
           </div>
 
-          <!-- Card 4: Laranja Claro - Serviços -->
+          <!-- Card 3: Azul Claro - Cursos e Formações -->
+          <div onclick="navigateTo('screen-devplan')" class="card-palette-blue p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <svg class="w-9 h-9 text-[#1976D2]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+              </svg>
+            </div>
+            <p class="font-extrabold text-[#1565C0] text-xs leading-tight">
+              Cursos e<br>Formações
+            </p>
+          </div>
+
+          <!-- Card 4: Laranja Claro - Produtos e Serviços -->
           <div onclick="navigateTo('screen-products')" class="card-palette-orange p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
             <div class="w-12 h-12 flex items-center justify-center">
               <svg class="w-9 h-9 text-[#E65100]" viewBox="0 0 24 24" fill="currentColor">
@@ -258,12 +237,24 @@
               </svg>
             </div>
             <p class="font-extrabold text-[#BF360C] text-xs leading-tight">
-              Serviços
+              Produtos e<br>Serviços
             </p>
           </div>
 
-          <!-- Card 5: Lilás Claro - Linhas de Transmissão -->
-          <div onclick="navigateTo('screen-community')" class="card-palette-purple p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
+          <!-- Card 5: Menta Claro - Comunidade e Eventos -->
+          <div onclick="navigateTo('screen-community', { tab: 'eventos' })" class="card-palette-green p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <svg class="w-9 h-9 text-[#0E7A4A]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+              </svg>
+            </div>
+            <p class="font-extrabold text-[#0D442A] text-xs leading-tight">
+              Comunidade<br>e Eventos
+            </p>
+          </div>
+
+          <!-- Card 6: Lilás Claro - Linhas de Transmissão -->
+          <div onclick="navigateTo('screen-community', { tab: 'canais' })" class="card-palette-purple p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
             <div class="w-12 h-12 flex items-center justify-center">
               <svg class="w-9 h-9 text-[#9C27B0]" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6V4h12v10z"/>
@@ -272,6 +263,17 @@
             </div>
             <p class="font-extrabold text-[#7B1FA2] text-xs leading-tight">
               Linhas de<br>Transmissão
+            </p>
+          </div>
+          <!-- Card 7: Serviços -->
+          <div onclick="navigateTo('screen-services')" class="card-palette-green p-4 rounded-3xl cursor-pointer hover:shadow-md transition duration-200 flex flex-col items-center justify-center text-center h-36 gap-2">
+            <div class="w-12 h-12 flex items-center justify-center">
+              <svg class="w-10 h-10 text-[#0E7A4A]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+              </svg>
+            </div>
+            <p class="font-extrabold text-[#0D442A] text-xs leading-tight">
+              Serviços
             </p>
           </div>
         </div>
@@ -413,7 +415,7 @@
       <section id="screen-devplan" class="screen-view p-4 space-y-3">
         <!-- Topo com Botão Voltar, Título e Subtítulo Ciclo de 18 meses -->
         <div class="flex items-center gap-2 pt-1">
-          <button onclick="goBackHistory()" class="screen-back-btn w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
+          <button onclick="goBackHistory()" class="w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
           <div>
@@ -520,13 +522,24 @@
           </div>
         </div>
 
+        <!-- Card Inferior com Ícone Alvo Verde: Meta Atual -->
+        <div class="card-palette-green p-3.5 rounded-2xl flex items-center gap-3 mt-3 shadow-2xs">
+          <div class="w-9 h-9 rounded-xl bg-emerald-200/80 text-[#0E7A4A] flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+            </svg>
+          </div>
+          <p class="text-[11px] text-slate-800 leading-snug">
+            <strong>Meta atual:</strong> cadastrar 6 produtos, elaborar 3 fichas de custo e realizar 1 feira-piloto.
+          </p>
+        </div>
       </section>
 
       <!-- ================= 5. TELA: MEU NEGÓCIO (IMAGEM 5) ================= -->
       <section id="screen-business" class="screen-view p-4 space-y-3.5">
         <!-- Topo com Botão Voltar, Folha Verde e Título 'Meu Negócio' -->
         <div class="flex items-center gap-2 pt-1">
-          <button onclick="goBackHistory()" class="screen-back-btn w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
+          <button onclick="goBackHistory()" class="w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
           <div class="flex items-center gap-1.5">
@@ -539,7 +552,7 @@
 
         <!-- Lista de 7 Módulos com Ícones Coloridos e Seta '>' -->
         <div class="space-y-2 text-xs">
-          <!-- 1. Perfil do meu negócio (Verde)-->
+          <!-- 1. Perfil do meu negócio (Verde) -->
           <div onclick="openBusinessProfileModal()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-emerald-100 text-[#0E7A4A] flex items-center justify-center shrink-0">
@@ -584,7 +597,7 @@
           </div>
 
           <!-- 5. Minhas metas e progresso (Rosa/Magenta) -->
-          <div class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between shadow-2xs">
+          <div onclick="openGoalsModal()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-rose-100 text-[#E52D5A] flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4 19h16v2H4zm14-14h-3v12h3V5zm-5 4h-3v8h3V9zm-5 4H5v4h3v-4z"/></svg>
@@ -594,7 +607,7 @@
             <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </div>
 
-          <!-- 6. Documentos e orientações legais (Azul Claro) 
+          <!-- 6. Documentos e orientações legais (Azul Claro) -->
           <div onclick="openLegalDocumentsModal()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-blue-100 text-blue-500 flex items-center justify-center shrink-0">
@@ -603,9 +616,9 @@
               <span class="font-bold text-slate-800">Documentos e orientações legais</span>
             </div>
             <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>-->
+          </div>
 
-          <!-- 7. Comercialização e divulgação (Laranja) 
+          <!-- 7. Comercialização e divulgação (Laranja) -->
           <div onclick="navigateTo('screen-products')" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-orange-100 text-[#E65100] flex items-center justify-center shrink-0">
@@ -615,7 +628,7 @@
             </div>
             <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </div>
-        </div>-->
+        </div>
 
         <!-- Card Inferior: Meu plano, minha evolução 40% (Card Menta/Verde) -->
         <div class="card-palette-green p-4 rounded-3xl space-y-2 text-xs shadow-2xs">
@@ -642,10 +655,10 @@
       <section id="screen-health" class="screen-view p-4 space-y-3.5">
         <!-- Topo com Botão Voltar e Título -->
         <div class="flex items-center gap-2 pt-1">
-          <button onclick="goBackHistory()" class="screen-back-btn w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
+          <button onclick="goBackHistory()" class="w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
-          <h2 class="text-base font-extrabold text-slate-900 leading-tight">Saúde e Bem_Viver</h2>
+          <h2 class="text-base font-extrabold text-slate-900 leading-tight">Saúde Mental e Bem-Viver</h2>
         </div>
 
         <!-- Banner Ilustrado Exato com Fundo Amarelo Sol / Amazônia e Mulher Serena -->
@@ -687,7 +700,7 @@
         <!-- Lista dos 5 Módulos de Bem-Viver -->
         <div class="space-y-2 text-xs">
           <!-- 1. Agendamentos e atividades (Rosa) -->
-          <div onclick="showHealthComingSoon()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
+          <div onclick="navigateTo('screen-health-support')" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-rose-100 text-[#E52D5A] flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
@@ -701,7 +714,7 @@
           </div>
 
           <!-- 2. Rodas de conversa (Laranja) -->
-          <div onclick="showHealthComingSoon()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
+          <div onclick="navigateTo('screen-community', { tab: 'eventos' })" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-orange-100 text-[#E65100] flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
@@ -715,7 +728,7 @@
           </div>
 
           <!-- 3. Práticas integrativas (plantas, corpo, território) (Verde) -->
-          <div onclick="showHealthComingSoon()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
+          <div onclick="navigateTo('screen-health-support')" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-emerald-100 text-[#0E7A4A] flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A9.49 9.49 0 0011 20c7 0 11-8 11-8s-3 1-5-4z"/></svg>
@@ -729,7 +742,7 @@
           </div>
 
           <!-- 4. Suporte psicossocial (Azul) -->
-          <div onclick="showHealthComingSoon()" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
+          <div onclick="navigateTo('screen-health-support')" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
             <div class="flex items-center gap-3">
               <div class="w-8 h-8 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -742,6 +755,19 @@
             <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </div>
 
+          <!-- 5. Materiais de apoio (áudios, vídeos, cartilhas) (Roxo) -->
+          <div onclick="navigateTo('screen-health-support')" class="bg-white p-3.5 rounded-2xl border border-slate-200/90 flex items-center justify-between hover:bg-slate-50 cursor-pointer shadow-2xs">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-purple-100 text-[#9C27B0] flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800 text-xs">Materiais de apoio (áudios, vídeos, cartilhas)</h4>
+                <p class="text-[11px] text-slate-500">Informações educativas, sem prontuário</p>
+              </div>
+            </div>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
         </div>
       </section>
 
@@ -867,6 +893,27 @@
           </div>
         </div>
 
+        <!-- Seção: Materiais de Apoio com 3 Pílulas Brancas -->
+        <div class="pt-1">
+          <h4 class="text-xs font-extrabold text-[#0D442A] mb-2">Materiais de apoio</h4>
+          <div class="grid grid-cols-3 gap-2">
+            <!-- Áudio -->
+            <button onclick="playSupportItem('audio')" class="bg-white py-2.5 px-2 rounded-2xl border border-slate-200 shadow-2xs hover:border-[#0E7A4A] flex items-center justify-center gap-1.5 transition">
+              <svg class="w-4 h-4 text-[#9C27B0]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-9 9v7c0 1.1.9 2 2 2h4v-8H5v-1a7 7 0 0114 0v1h-4v8h4c1.1 0 2-.9 2-2v-7a9 9 0 00-9-9z"/></svg>
+              <span class="text-xs font-bold text-slate-800">Áudio</span>
+            </button>
+            <!-- Vídeo -->
+            <button onclick="playSupportItem('video')" class="bg-white py-2.5 px-2 rounded-2xl border border-slate-200 shadow-2xs hover:border-[#0E7A4A] flex items-center justify-center gap-1.5 transition">
+              <svg class="w-4 h-4 text-[#E52D5A]" fill="currentColor" viewBox="0 0 24 24"><path d="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z"/></svg>
+              <span class="text-xs font-bold text-slate-800">Vídeo</span>
+            </button>
+            <!-- Cartilha -->
+            <button onclick="playSupportItem('cartilha')" class="bg-white py-2.5 px-2 rounded-2xl border border-slate-200 shadow-2xs hover:border-[#0E7A4A] flex items-center justify-center gap-1.5 transition">
+              <svg class="w-4 h-4 text-[#1976D2]" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+              <span class="text-xs font-bold text-slate-800">Cartilha</span>
+            </button>
+          </div>
+        </div>
       </section>
 
       <!-- ================= 8. TELA: PRODUTOS ================= -->
@@ -874,7 +921,7 @@
         <!-- Topo com Botão Voltar, Título e Ícone Carrinho com bolinha vermelha -->
         <div class="flex items-center justify-between pt-1">
           <div class="flex items-center gap-2">
-            <button onclick="goBackHistory()" class="screen-back-btn w-8 h-8 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
+            <button onclick="goBackHistory()" class="w-8 h-8 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <h2 class="text-base font-extrabold text-slate-900 leading-tight">Produtos comunitários</h2>
@@ -894,13 +941,13 @@
           <input type="text" id="catalogSearch" oninput="filterCatalogItems()" placeholder="Buscar produtos..." class="w-full pl-10 pr-3 py-2.5 bg-slate-50 border border-slate-200/90 rounded-2xl text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0E7A4A]">
         </div>
 
-        <!-- Pílulas de Filtros -->
+        <!-- Pílulas de Filtros: Todos, Alimentos, Artesanato, Plantas, Experiências -->
         <div class="flex items-center gap-1.5 overflow-x-auto pb-0.5 text-xs scrollbar-none">
           <button onclick="setCategoryFilter('Todos')" class="cat-pill px-3 py-1.5 rounded-full font-bold bg-[#0E7A4A] text-white shrink-0" data-cat="Todos">Todos</button>
           <button onclick="setCategoryFilter('Alimentos')" class="cat-pill px-3 py-1.5 rounded-full font-medium bg-slate-100 text-slate-700 shrink-0" data-cat="Alimentos">Alimentos</button>
           <button onclick="setCategoryFilter('Artesanato')" class="cat-pill px-3 py-1.5 rounded-full font-medium bg-slate-100 text-slate-700 shrink-0" data-cat="Artesanato">Artesanato</button>
           <button onclick="setCategoryFilter('Plantas')" class="cat-pill px-3 py-1.5 rounded-full font-medium bg-slate-100 text-slate-700 shrink-0" data-cat="Plantas">Plantas</button>
-          <button onclick="setCategoryFilter('TBC')" class="cat-pill px-3 py-1.5 rounded-full font-medium bg-slate-100 text-slate-700 shrink-0" data-cat="TBC">TBC</button>
+          <button onclick="setCategoryFilter('Experiências')" class="cat-pill px-3 py-1.5 rounded-full font-medium bg-slate-100 text-slate-700 shrink-0" data-cat="Experiências">Experiências</button>
         </div>
 
         <!-- Grid 2 Colunas com os 4 Cards Exatos da Imagem 8 -->
@@ -913,7 +960,7 @@
       <!-- ================= TELA: SERVIÇOS COMUNITÁRIOS ================= -->
       <section id="screen-services" class="screen-view p-4 space-y-3.5">
         <div class="flex items-center gap-2 pt-1">
-          <button onclick="goBackHistory()" class="screen-back-btn w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition" aria-label="Voltar">
+          <button onclick="goBackHistory()" class="w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition" aria-label="Voltar">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
           <div>
@@ -965,7 +1012,7 @@
       <section id="screen-benzedeiras" class="screen-view p-4 space-y-3.5">
         <!-- Topo com Botão Voltar e Título -->
         <div class="flex items-center gap-2 pt-1">
-          <button onclick="goBackHistory()" class="screen-back-btn w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
+          <button onclick="goBackHistory()" class="w-9 h-9 rounded-2xl border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
           <h2 class="text-base font-extrabold text-slate-900 leading-tight">Memórias das benzedeiras</h2>
@@ -1079,10 +1126,20 @@
           </button>
         </div>
 
-        <h3 class="text-base font-extrabold text-slate-900">Linhas de transmissão</h3>
+        <h3 class="text-base font-extrabold text-slate-900">Comunidade</h3>
+
+        <!-- Pílula de Alternância 'Eventos' (Ativo Verde) / 'Linhas de transmissão' -->
+        <div class="bg-slate-100 p-1 rounded-2xl flex items-center text-xs font-bold">
+          <button id="tabCommEvents" onclick="switchCommunityView('eventos')" class="flex-1 py-2 rounded-xl bg-[#0E7A4A] text-white shadow-xs transition">
+            Eventos
+          </button>
+          <button id="tabCommChannels" onclick="switchCommunityView('canais')" class="flex-1 py-2 rounded-xl text-slate-600 hover:text-slate-900 transition">
+            Linhas de transmissão
+          </button>
+        </div>
 
         <!-- Subtela Eventos com 5 Cards Coloridos Exatos da Imagem 10 -->
-        <div id="commEventsList" class="space-y-2 text-xs" style="display: none;">
+        <div id="commEventsList" class="space-y-2 text-xs">
           <!-- 1. Roda de conversa (Rosa) -->
           <div onclick="showToast('Lembrete salvo para Mulheres e território!')" class="card-palette-pink p-3 rounded-2xl flex items-center justify-between cursor-pointer hover:shadow-xs transition">
             <div class="flex items-center gap-3">
@@ -1172,12 +1229,36 @@
           </div>
         </div>
 
-        <div id="commChannelsContent" class="space-y-2 text-xs">
-          <div id="communityContactsList" class="space-y-2"></div>
-        </div>
-
        
       </div>
+
+    <!-- ================= BARRA DE NAVEGAÇÃO INFERIOR EXATA COM 5 ÍCONES ================= -->
+    <nav id="bottomBar" class="absolute bottom-0 left-0 w-full bg-white border-t border-slate-100 px-3 py-2 flex items-center justify-around z-40">
+      <!-- 1. Home (Ativo Verde) -->
+      <button onclick="navigateTo('screen-home')" class="bnav-btn p-2 text-[#0E7A4A] transition" data-nav="screen-home">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      </button>
+
+      <!-- 2. Maleta / Negócio -->
+      <button onclick="navigateTo('screen-business')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-business">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+      </button>
+
+      <!-- 3. Coração / Saúde -->
+      <button onclick="navigateTo('screen-health')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-health">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+      </button>
+
+      <!-- 4. Grupo Pessoas / Comunidade -->
+      <button onclick="navigateTo('screen-community')" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition" data-nav="screen-community">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      </button>
+
+      <!-- 5. Perfil Usuário -->
+      <button onclick="openBusinessProfileModal()" class="bnav-btn p-2 text-slate-400 hover:text-emerald-800 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+      </button>
+    </nav>
 
     <!-- ================= CESTO SOLIDÁRIO / DRAWER DE CARRINHO ================= -->
     <div id="cartBackdrop" onclick="toggleCartDrawer()" class="absolute inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-200"></div>

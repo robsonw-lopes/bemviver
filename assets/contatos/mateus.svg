@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Retrato ilustrado de Mateus">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#81b6a0"/><stop offset="1" stop-color="#285b4c"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#a86e4c"/><stop offset="1" stop-color="#805039"/></linearGradient>
+    <clipPath id="frame"><circle cx="60" cy="60" r="60"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="120" height="120" fill="url(#bg)"/>
+    <path d="M0 34Q18 10 31 33T58 25V0H0zm120 23Q104 31 88 47T65 25V0h55z" fill="#477e5f"/>
+    <path d="M0 91q22-25 42-3t39 0q19-20 39 0v32H0z" fill="#285541"/>
+    <path d="M19 124q4-30 28-38h27q24 8 27 38" fill="#d9e2d1"/>
+    <path d="M46 86l14 13 14-13 9 38H37z" fill="#356f65"/>
+    <path d="M33 45q2-27 27-27 26 0 27 27l-4 24q-3 19-23 22-20-3-23-22z" fill="#211b17"/>
+    <path d="M41 47q1-19 19-19 20 0 20 21v14q-2 20-20 23-18-3-19-23z" fill="url(#skin)"/>
+    <path d="M38 48q5-13 19-13 14 3 24-5l3 17q-10-8-18-8-17 0-28 12z" fill="#211b17"/>
+    <path d="M47 61h6m14 0h6" stroke="#2b201a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M53 75q7 5 14 0" fill="none" stroke="#5d382c" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1 62q14-15 23-4-12 0-18 14m111-7q-14-15-22-3 10 1 17 13" fill="#a8ca98"/>
+  </g>
+</svg>

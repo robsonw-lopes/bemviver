@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Retrato ilustrado de Francisca">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#a8c28d"/><stop offset="1" stop-color="#3b6548"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#a96f50"/><stop offset="1" stop-color="#88533e"/></linearGradient>
+    <clipPath id="frame"><circle cx="60" cy="60" r="60"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="120" height="120" fill="url(#bg)"/>
+    <path d="M0 26Q16 5 32 28T61 22V0H0zm120 27Q104 25 87 42T62 26V0h58z" fill="#648650"/>
+    <path d="M0 82q19-23 39-1t40 0q22-22 41 1v38H0z" fill="#345a40"/>
+    <path d="M18 124q3-31 28-38h28q25 7 28 38" fill="#d9ccae"/>
+    <path d="M40 89l20 15 20-15 8 35H32z" fill="#6d8564"/>
+    <path d="M31 49q0-31 29-31 29 0 29 31v22q-2 22-29 24-27-2-29-24z" fill="#d7d4c7"/>
+    <path d="M40 49q1-22 20-22 20 0 20 23v13q-1 22-20 25-19-3-20-25z" fill="url(#skin)"/>
+    <path d="M33 52q-3-32 27-34 29 2 28 35l-7-11q-8-4-13-14-7 12-27 16l-2 12z" fill="#ddd9ca"/>
+    <path d="M47 62h6m14 0h6" stroke="#392820" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M52 76q8 4 16 0" fill="none" stroke="#653d31" stroke-width="2" stroke-linecap="round"/>
+    <path d="M43 58q5-3 10 0m14 0q5-3 10 0" fill="none" stroke="#704a39" stroke-width="1.6"/>
+    <path d="M3 68q14-17 22-6-11 1-17 14m108-10q-13-16-22-5 10 2 16 14" fill="#b5c98b"/>
+  </g>
+</svg>

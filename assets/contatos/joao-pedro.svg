@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Retrato ilustrado de João Pedro">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#79a879"/><stop offset="1" stop-color="#244e3c"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#8c543a"/><stop offset="1" stop-color="#693d2e"/></linearGradient>
+    <clipPath id="frame"><circle cx="60" cy="60" r="60"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="120" height="120" fill="url(#bg)"/>
+    <path d="M8 0h8v120H8zm90 0h7v120h-7z" fill="#55764a" opacity=".75"/>
+    <path d="M0 40Q17 17 30 37T57 28V0H0zm120 20Q102 28 88 45T65 33V0h55z" fill="#477b51"/>
+    <path d="M20 124q4-31 27-38h27q23 7 26 38" fill="#d4a15e"/>
+    <path d="M48 85l12 13 12-13 9 39H39z" fill="#47765c"/>
+    <path d="M33 48q1-29 28-29t27 29l-4 20q-4 20-23 22-20-2-24-22z" fill="#211a17"/>
+    <path d="M41 48q2-19 20-19 19 0 19 21v13q-2 20-20 23-18-3-19-23z" fill="url(#skin)"/>
+    <path d="M39 48q8-12 22-9 11 2 22-4l1 13q-9-7-17-7-16 0-27 10z" fill="#211a17"/>
+    <path d="M48 61h6m13 0h6" stroke="#241b18" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M53 75q7 3 14 0" fill="none" stroke="#492b24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M42 72q2 14 18 14t18-14q-3 20-18 22-15-2-18-22" fill="#38231e" opacity=".8"/>
+    <path d="M0 74q16-14 22 0-11-1-18 12m116-27q-15-15-23-1 11 0 19 13" fill="#afc779"/>
+  </g>
+</svg>

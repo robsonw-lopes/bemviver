@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Retrato ilustrado de Ana Clara">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#8dbb83"/><stop offset="1" stop-color="#315e43"/></linearGradient>
+    <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#bd805c"/><stop offset="1" stop-color="#9c5e43"/></linearGradient>
+    <clipPath id="frame"><circle cx="60" cy="60" r="60"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="120" height="120" fill="url(#bg)"/>
+    <path d="M0 35Q16 11 29 29T53 24V0H0zm120 7Q101 12 88 31T66 18V0h54z" fill="#527d50" opacity=".75"/>
+    <path d="M0 83q20-21 39 0t40-1q20-22 41 0v37H0z" fill="#274e39" opacity=".7"/>
+    <path d="M21 124q2-30 23-36h32q22 7 24 36" fill="#d7e4c4"/>
+    <path d="M43 85l17 17 17-17 10 39H33z" fill="#6a9972"/>
+    <path d="M34 45q0-29 27-29 26 0 27 29l-3 21q-3 21-26 23-24-2-27-23z" fill="#211d19"/>
+    <path d="M42 48q0-21 19-21 21 0 21 22v13q-1 22-21 25-18-3-19-25z" fill="url(#skin)"/>
+    <path d="M41 47q7-8 16-6 12 2 25-5l2 13q-7-8-15-8-15 1-28 9z" fill="#211d19"/>
+    <path d="M47 61h6m14 0h6" stroke="#34231e" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M54 75q7 5 14 0" fill="none" stroke="#653b31" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="40" cy="68" r="3" fill="#bd805c"/><circle cx="83" cy="68" r="3" fill="#bd805c"/>
+    <path d="M4 70q12-17 21-7-11 2-17 15m104-13q-12-17-21-7 11 2 17 15" fill="#a5c27a" opacity=".8"/>
+  </g>
+</svg>
