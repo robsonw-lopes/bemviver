@@ -1,4 +1,4 @@
-    /* 1. DADOS DE CATÁLOGO DOS 4 PRODUTOS EXATOS DA IMAGEM 8 */
+    /* 1. DADOS DO CATÁLOGO COMUNITÁRIO */
     const catalogData = [
       {
         id: 'acai',
@@ -6,7 +6,7 @@
         price: 'R$ 22,00/litro',
         rawPrice: 22.00,
         category: 'Alimentos',
-        image: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=500&q=80',
+        image: './assets/alimento-acai.svg',
         isFavorite: true
       },
       {
@@ -15,7 +15,34 @@
         price: 'R$ 19,00',
         rawPrice: 19.00,
         category: 'Alimentos',
-        image: 'https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=500&q=80',
+        image: './assets/alimento-chocolate.svg',
+        isFavorite: false
+      },
+      {
+        id: 'manicoba',
+        title: 'Maniçoba',
+        price: 'R$ 30,00',
+        rawPrice: 30.00,
+        category: 'Alimentos',
+        image: './assets/alimento-manicoba.svg',
+        isFavorite: false
+      },
+      {
+        id: 'pato-tucupi',
+        title: 'Pato no tucupi',
+        price: 'R$ 42,00',
+        rawPrice: 42.00,
+        category: 'Alimentos',
+        image: './assets/alimento-pato-tucupi.svg',
+        isFavorite: false
+      },
+      {
+        id: 'peixe-frito',
+        title: 'Peixe frito amazônico',
+        price: 'R$ 35,00',
+        rawPrice: 35.00,
+        category: 'Alimentos',
+        image: './assets/alimento-peixe-frito.svg',
         isFavorite: false
       },
       {
@@ -24,7 +51,34 @@
         price: 'R$ 45,00',
         rawPrice: 45.00,
         category: 'Artesanato',
-        image: 'https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=500&q=80',
+        image: './assets/artesanato-cestaria.svg',
+        isFavorite: false
+      },
+      {
+        id: 'ceramica-marajoara',
+        title: 'Cerâmica decorativa marajoara',
+        price: 'R$ 65,00',
+        rawPrice: 65.00,
+        category: 'Artesanato',
+        image: './assets/artesanato-ceramica.svg',
+        isFavorite: false
+      },
+      {
+        id: 'biojoia-sementes',
+        title: 'Colar de sementes amazônicas',
+        price: 'R$ 38,00',
+        rawPrice: 38.00,
+        category: 'Artesanato',
+        image: './assets/artesanato-biojoia.svg',
+        isFavorite: false
+      },
+      {
+        id: 'bolsa-fibra',
+        title: 'Bolsa de fibra trançada',
+        price: 'R$ 75,00',
+        rawPrice: 75.00,
+        category: 'Artesanato',
+        image: './assets/artesanato-bolsa.svg',
         isFavorite: false
       },
       {
@@ -35,6 +89,42 @@
         category: 'Plantas',
         image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=500&q=80',
         isFavorite: true
+      },
+      {
+        id: 'jambu',
+        title: 'Jambu amazônico',
+        price: 'R$ 12,00',
+        rawPrice: 12.00,
+        category: 'Plantas',
+        image: './assets/plantas-jambu.svg',
+        isFavorite: false
+      },
+      {
+        id: 'alfavaca',
+        title: 'Muda de alfavaca',
+        price: 'R$ 15,00',
+        rawPrice: 15.00,
+        category: 'Plantas',
+        image: './assets/plantas-alfavaca.svg',
+        isFavorite: false
+      },
+      {
+        id: 'chicoria-para',
+        title: 'Chicória-do-Pará',
+        price: 'R$ 10,00',
+        rawPrice: 10.00,
+        category: 'Plantas',
+        image: './assets/plantas-chicoria-para.svg',
+        isFavorite: false
+      },
+      {
+        id: 'visita-fabrica-beju',
+        title: 'Pacote de turismo: visitação à fábrica Beju',
+        price: 'Valor sob consulta',
+        category: 'TBC',
+        image: './assets/turismo-comunidade-ribeirinha.svg',
+        isFavorite: false,
+        isInquiry: true
       }
     ];
 
@@ -80,12 +170,33 @@
     let remainingSpots = 20;
 
     /* 3. NAVEGAÇÃO */
+    function ensureBackButtonForScreen(screenId) {
+      const target = document.getElementById(screenId);
+      if (!target || screenId === 'screen-home' || screenId === 'screen-terms') return;
+
+      const existingBackButton = target.querySelector('.screen-back-btn');
+      if (existingBackButton) return;
+
+      const backButton = document.createElement('button');
+      backButton.type = 'button';
+      backButton.className = 'screen-back-btn self-start mb-2 w-9 h-9 rounded-2xl border border-slate-200 bg-white flex items-center justify-center text-slate-700 hover:bg-slate-50 transition shadow-xs';
+      backButton.setAttribute('aria-label', 'Voltar');
+      backButton.innerHTML = `
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      `;
+      backButton.addEventListener('click', goBackHistory);
+      target.insertBefore(backButton, target.firstChild);
+    }
+
     function navigateTo(screenId, params = {}) {
       const target = document.getElementById(screenId);
       if (!target) return;
 
       document.querySelectorAll('.screen-view').forEach(view => view.classList.remove('active'));
       target.classList.add('active');
+      ensureBackButtonForScreen(screenId);
 
       if (screenHistory[screenHistory.length - 1] !== screenId) {
         screenHistory.push(screenId);
@@ -95,10 +206,8 @@
 
       updateBottomNav(screenId);
 
-      if (params.tab === 'eventos') {
-        switchCommunityView('eventos');
-      } else if (params.tab === 'canais') {
-        switchCommunityView('canais');
+      if (screenId === 'screen-community') {
+        renderCommunityChannels();
       }
 
       // Sincronizar botões da régua superior
@@ -148,13 +257,19 @@
       document.getElementById('homeWelcomeComm').textContent = `Comunidade: ${currentUser.community}`;
     }
 
-    function logoutOrReset() {
+    function sair() {
       try {
         localStorage.removeItem('app_comunitario_user');
+        localStorage.removeItem('app_comunitario_terms_accepted');
+        localStorage.removeItem('app_comunitario_pending_user');
       } catch (error) {
-        console.warn('Não foi possível limpar a sessão salva neste navegador.', error);
+        console.warn('Não foi possível limpar a sessão do usuário.', error);
       }
-      window.location.href = './index.html';
+      window.location.replace('./index.html');
+    }
+
+    function logoutOrReset() {
+      sair();
     }
 
     /* 5. TERMOS DE CONSENTIMENTO */
@@ -224,14 +339,21 @@
               <h4 class="font-extrabold text-xs text-slate-900 leading-snug line-clamp-2">${prod.title}</h4>
               <p class="font-extrabold text-[#0E7A4A] text-xs mt-1">${prod.price}</p>
             </div>
-            <button onclick="addToCart('${prod.id}')" class="mt-2 w-full py-1.5 bg-[#0E7A4A] hover:bg-[#0A5C37] text-white rounded-xl text-[11px] font-bold transition flex items-center justify-center gap-1">
+            <button onclick="${prod.isInquiry ? 'showTourismPackageDetails()' : `addToCart('${prod.id}')`}" class="mt-2 w-full py-1.5 bg-[#0E7A4A] hover:bg-[#0A5C37] text-white rounded-xl text-[11px] font-bold transition flex items-center justify-center gap-1">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-              <span>Adicionar</span>
+              <span>${prod.isInquiry ? 'Ver detalhes' : 'Adicionar'}</span>
             </button>
           </div>
         `;
         grid.appendChild(card);
       });
+    }
+
+    function showTourismPackageDetails() {
+      openGenericModal(
+        'Pacote de turismo — fábrica Beju',
+        '<p>Conheça a fábrica Beju em uma visita turística comunitária.</p><p>Consulte a comunidade sobre valores, datas e disponibilidade.</p>'
+      );
     }
 
     function setCategoryFilter(cat) {
@@ -421,43 +543,42 @@
     }
 
     /* 10. COMUNIDADE E CANAIS */
-    function switchCommunityView(tab) {
-      const tEvents = document.getElementById('tabCommEvents');
-      const tChannels = document.getElementById('tabCommChannels');
-      const cEvents = document.getElementById('commEventsList');
+    function renderCommunityChannels() {
+      const contactsList = document.getElementById('communityContactsList');
+      contactsList.innerHTML = '';
 
-      if (tab === 'eventos') {
-        tEvents.className = 'flex-1 py-2 rounded-xl bg-[#0E7A4A] text-white shadow-xs transition';
-        tChannels.className = 'flex-1 py-2 rounded-xl text-slate-600 hover:text-slate-900 transition';
-        cEvents.style.display = 'block';
-      } else {
-        tChannels.className = 'flex-1 py-2 rounded-xl bg-[#0E7A4A] text-white shadow-xs transition';
-        tEvents.className = 'flex-1 py-2 rounded-xl text-slate-600 hover:text-slate-900 transition';
-        openChannelDetailsModal('Avisos do Território');
-      }
-    }
-
-    function openChannelDetailsModal(channelName) {
-      const contacts = communityContacts.map(contact => {
+      communityContacts.forEach(contact => {
         const message = encodeURIComponent(`Olá, ${contact.name}! Encontrei seu contato no app da comunidade.`);
-        return `
-          <div class="flex items-center gap-3 p-2.5 bg-slate-50 rounded-xl border border-slate-200/70">
-            <img src="${contact.photo}" alt="Retrato ilustrado de ${contact.name}" class="w-12 h-12 rounded-full object-cover shrink-0">
-            <div class="min-w-0 flex-1">
-              <p class="font-bold text-slate-800 text-xs truncate">${contact.name}</p>
-              <p class="text-[10px] text-slate-500">${contact.role}</p>
-              <p class="text-[10px] text-slate-400">${contact.phone}</p>
-            </div>
-            <a href="https://wa.me/${contact.phone}?text=${message}" target="_blank" rel="noopener noreferrer" aria-label="Conversar com ${contact.name} pelo WhatsApp" class="shrink-0 px-2.5 py-2 bg-[#25D366] hover:bg-[#1fbd5b] text-white text-[10px] font-bold rounded-lg transition">
-              WhatsApp
-            </a>
-          </div>`;
-      }).join('');
+        const card = document.createElement('div');
+        card.className = 'flex items-center gap-3 p-2.5 bg-white rounded-xl border border-slate-200/70';
 
-      openGenericModal(
-        'Contatos da comunidade',
-        `<p class="mb-2 text-[10px] text-slate-500">Contatos fictícios · retratos ilustrados · ${channelName}</p><div class="space-y-2">${contacts}</div>`
-      );
+        const photo = document.createElement('img');
+        photo.src = contact.photo;
+        photo.alt = `Retrato ilustrado de ${contact.name}`;
+        photo.className = 'w-12 h-12 rounded-full object-cover shrink-0';
+
+        const details = document.createElement('div');
+        details.className = 'min-w-0 flex-1';
+        details.innerHTML = `
+          <p class="font-bold text-slate-800 text-xs truncate"></p>
+          <p class="text-[10px] text-slate-500"></p>
+          <p class="text-[10px] text-slate-400"></p>
+        `;
+        details.children[0].textContent = contact.name;
+        details.children[1].textContent = contact.role;
+        details.children[2].textContent = contact.phone;
+
+        const whatsappLink = document.createElement('a');
+        whatsappLink.href = `https://wa.me/${contact.phone}?text=${message}`;
+        whatsappLink.target = '_blank';
+        whatsappLink.rel = 'noopener noreferrer';
+        whatsappLink.setAttribute('aria-label', `Conversar com ${contact.name} pelo WhatsApp`);
+        whatsappLink.className = 'shrink-0 px-2.5 py-2 bg-[#25D366] hover:bg-[#1fbd5b] text-white text-[10px] font-bold rounded-lg transition';
+        whatsappLink.textContent = 'WhatsApp';
+
+        card.append(photo, details, whatsappLink);
+        contactsList.appendChild(card);
+      });
     }
 
     /* 11. MODAIS INFORMATIVOS */
@@ -469,15 +590,6 @@
          <p><strong>Comunidade:</strong> ${user.community}</p>
          <p><strong>Ramo:</strong> Polpas de Açaí e Derivados Agroecológicos</p>
          <p><strong>Fase de Incubação:</strong> Nível 2 - Ficha Técnica e Custos</p>`
-      );
-    }
-
-    function openGoalsModal() {
-      openGenericModal(
-        'Minhas Metas e Progresso',
-        `<p><strong>Meta 1:</strong> Cadastrar 6 produtos no catálogo (4/6 concluído).</p>
-         <p><strong>Meta 2:</strong> 3 fichas de custo detalhadas com o SEBRAE.</p>
-         <p><strong>Meta 3:</strong> Participação na feira territorial de 25/10.</p>`
       );
     }
 
@@ -524,6 +636,13 @@
       document.getElementById('genericModalTitle').textContent = title;
       document.getElementById('genericModalContent').innerHTML = htmlContent;
       document.getElementById('modalGeneric').classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function showHealthComingSoon() {
+      openGenericModal(
+        'Nenhuma atividade registrada',
+        '<p>Não há atividades registradas no momento.</p>'
+      );
     }
 
     function closeGenericModal() {
@@ -611,12 +730,33 @@
       }
 
       updateUserUI();
+
+      let pendingUser = null;
+      try {
+        pendingUser = JSON.parse(localStorage.getItem('app_comunitario_pending_user') || 'null');
+      } catch (error) {
+        console.warn('Não foi possível ler o cadastro pendente.', error);
+      }
+
+      if (pendingUser && currentUser && currentUser.name === pendingUser.name && currentUser.community === pendingUser.community) {
+        try {
+          localStorage.removeItem('app_comunitario_pending_user');
+        } catch (error) {
+          console.warn('Não foi possível limpar o cadastro pendente.', error);
+        }
+      }
+
       let termsAccepted = false;
       try {
         termsAccepted = localStorage.getItem('app_comunitario_terms_accepted') === 'true';
       } catch (error) {
         console.warn('O navegador bloqueou a leitura do consentimento salvo.', error);
       }
-      navigateTo(termsAccepted ? 'screen-home' : 'screen-terms');
+
+      if (pendingUser && !termsAccepted) {
+        navigateTo('screen-terms');
+      } else {
+        navigateTo(termsAccepted ? 'screen-home' : 'screen-terms');
+      }
       renderCatalog(catalogData);
     });
