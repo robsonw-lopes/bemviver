@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Entrar - Aplicativo Comunitário</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col items-center justify-start p-2 sm:p-4 select-none">
+  <main id="appWrapper" class="phone-mockup">
+    <div class="speaker-notch hidden sm:block"></div>
+    <div class="w-full bg-white px-6 pt-3 pb-1 flex items-center justify-between text-slate-900 text-[12px] font-bold shrink-0 z-40 select-none">
+      <span class="tracking-tight pl-1">13:31</span>
+      <div class="flex items-center space-x-1.5 text-slate-800 pr-1">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M2 17h3v4H2v-4zm6-5h3v9H8v-9zm6-5h3v14h-3V7zm6-4h3v18h-3V3z"/>
+        </svg>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+        </svg>
+        <div class="w-5 h-2.5 border border-slate-700 rounded-sm p-0.5 flex items-center">
+          <div class="bg-slate-800 h-full w-full rounded-2xs"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto bg-white relative">
+      <section class="screen-view active p-5 space-y-4">
+        <div class="text-center pt-4 pb-1">
+          <div class="inline-block relative mb-2">
+            <div class="w-20 h-20 rounded-full border-2 border-emerald-500 p-0.5 bg-amber-100 flex items-center justify-center overflow-hidden shadow-sm mx-auto">
+              <svg viewBox="0 0 100 100" class="w-full h-full" role="img" aria-label="Ilustração de uma mulher da comunidade">
+                <circle cx="50" cy="50" r="48" fill="#F8E7C9"/>
+                <circle cx="28" cy="46" r="14" fill="#201C19"/>
+                <circle cx="72" cy="46" r="14" fill="#201C19"/>
+                <circle cx="50" cy="32" r="22" fill="#201C19"/>
+                <ellipse cx="50" cy="52" rx="20" ry="22" fill="#A86237"/>
+                <circle cx="43" cy="50" r="2.5" fill="#1C1815"/>
+                <circle cx="57" cy="50" r="2.5" fill="#1C1815"/>
+                <path d="M44 60 Q50 67 56 60" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <path d="M22 95 Q50 78 78 95 Z" fill="#E65100"/>
+                <circle cx="50" cy="79" r="6" fill="#A86237"/>
+              </svg>
+            </div>
+          </div>
+          <h1 class="text-xl font-extrabold text-[#0D442A] tracking-tight">Aplicativo  Comunitário</h1>
+          <p class="text-xs text-slate-500 mt-0.5">Cuidado, Saberes e Empreendedorismo Territorial</p>
+        </div>
+
+        <form id="formLogin" onsubmit="handleAuthLogin(event)" class="space-y-3 pt-1 text-xs">
+          <button type="submit" class="w-full py-3.5 bg-[#0E7A4A] hover:bg-[#0A5C37] text-white font-bold rounded-2xl shadow-md transition flex items-center justify-center gap-2 text-sm mt-2">
+            <span>Acessar aplicativo</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script>
+    if (window.Capacitor?.isNativePlatform()) document.body.classList.add('native-app');
+  </script>
+  <script src="./auth.js"></script>
+</body>
+</html>

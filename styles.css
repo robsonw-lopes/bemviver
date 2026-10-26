@@ -1,0 +1,93 @@
+    body {
+      background-color: #0b1510;
+      font-family: 'Inter', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      margin: 0;
+      padding: 0;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c3d9cb;
+      border-radius: 999px;
+    }
+
+    .screen-view {
+      display: none;
+      animation: fadeIn 0.2s ease-out forwards;
+    }
+    .screen-view.active {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .phone-mockup {
+      width: 100%;
+      max-width: 412px;
+      height: 870px;
+      border-radius: 44px;
+      box-shadow: 0 25px 60px -15px rgba(0,0,0,0.8), 0 0 0 10px #1a2a22;
+      background: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body.native-app {
+      height: 100dvh;
+      min-height: 100dvh;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    body.native-app .phone-mockup {
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      min-height: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .mode-notebook-active .phone-mockup {
+      max-width: 980px;
+      height: 94vh;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 0 4px #1c3527;
+    }
+
+    .speaker-notch {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 135px;
+      height: 22px;
+      background: #000;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      z-index: 50;
+    }
+
+    /* Cores suaves e bordas exatas das imagens de referência */
+    .card-palette-green { background-color: #E8F7EE; }
+    .card-palette-pink { background-color: #FEECEF; }
+    .card-palette-blue { background-color: #EBF4FE; }
+    .card-palette-orange { background-color: #FEF3E7; }
+    .card-palette-purple { background-color: #F5EEFA; }
+    .card-palette-mint { background-color: #E9F7F1; }
+    .card-palette-yellow { background-color: #FEF8E7; }
+    .card-palette-redalert { background-color: #FEECEB; }
